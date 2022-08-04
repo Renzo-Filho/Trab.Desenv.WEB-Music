@@ -8,14 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <title>rock</title>
-
-    <style>
-        body{
-            background-color: seashell;
-        }
-    </style>
- 
+    <link rel="stylesheet" href="rock_style.css">
+    <title>rock</title> 
 </head>
 <body>
     <nav>
@@ -45,7 +39,7 @@
       <br><br>
 
         <div class="row">
-          <div class="col s6 m3" >
+          <div class="col s6 m3 container-card" >
             <div class="card">
               <div class="card-image">
                 <img src="Images/rock.jpg" style="height: 250px;">
@@ -57,7 +51,31 @@
           </div>
         </div>
 
+        <!-- PLAYER DA PÁGINAAA -->
+        
+          <div class="nav-wrapper playerOfMusic">
+            <div class="duracao">
+              <div class="barra-progresso">
+                  <progress value="1" max="1"></progress>
+                  <div class="ponto"></div>
+              </div>
+              <div class="tempo">
+                  <p class="inicio">00:00</p>
+                  <p class="final">4:00</p>
+              </div>
+            </div>
+  
+            <div class="player">
+              <i class="material-icons btn-change">arrow_back</i>
+              <i class="material-icons btn-play">play_arrow</i>
+              <i class="material-icons btn-pause">pause</i>
+              <i class="material-icons btn-change">arrow_forward</i> 
+            </div>
+
+          </div>
         <!-- ESTOU EM PROCESSO DE TESTE AINDA. A IDEIA É CRIAR UMA BARRA INFERIOR (PLAYER) SEMELHANTE AO DO SPOTIFY -->
+
+        <script src="player_script.js"></script>
 </body>
 <script>
     function playMusic1() {
