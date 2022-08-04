@@ -14,7 +14,7 @@ audio {
     border-radius: 5px;
 }
 .playerOfMusic {
-    display: flex;
+    
     position: fixed; 
     bottom: 0; 
     width: 100%;
@@ -39,11 +39,14 @@ audio {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    margin-left: calc(50vw - 150px);
+
 }
 
 progress{
     height: 6px;
     width: 0%;
+
 }
 
 .ponto {
@@ -58,14 +61,16 @@ progress{
     display: flex;
     width: 300px;
     justify-content: space-between;
+    margin-left: calc(50vw - 150px);
+
 }
 
 .player {
+    margin-left: calc(50vw - 150px);
     width: 300px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 15px;
 }
 
 .btn-play, .btn-pause {
