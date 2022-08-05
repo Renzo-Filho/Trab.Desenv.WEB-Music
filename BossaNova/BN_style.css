@@ -10,6 +10,9 @@ audio {
     display: none;
 }
 
+p{
+    font-size: medium;
+}
 .container-card {
     background-color:rgba(107, 95, 93, 0.3);
     border-radius: 2px; 
