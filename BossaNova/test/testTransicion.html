@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transition</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: column;
+            width:90%;
+            height: 600px;
+            border: 2px solid green;
+            color: #fff;
+            margin: 0 auto;
+        }
+        h1{
+            color: green;
+            margin:0 auto;
+        }
+        .box{
+            width:30%;
+            height: 80px;
+            background-color:green;
+            margin:10px;
+            position:relative;
+            left:0;
+            flex-wrap: wrap;
+            
+        }
+        .container:hover .box {
+            left: 60%;
+            -webkit-transition: left 4s;
+            -moz-transition: left 4s;
+            -ms-transition: left 4s;
+            -o-transition: left 4s;
+            transition: left 4s;
+        }
+        .container .box.linear {
+            transition-timing-function: linear;
+        }
+        .container .box.ease {
+            transition-timing-function: ease;
+        }
+        .container .box.ease-in {
+            transition-timing-function: ease-in;
+        }
+        .container .box.ease-out {
+            transition-timing-function: ease-out;
+        }
+        .container .box.ease-in-out {
+            transition-timing-function: ease;
+        }
+        .container .box.cubic-bezier {
+            transition-timing-function: cubic-bezier(.71,.01,.53,.89);
+        }      
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>CSS Transition</h1>
+    <div class="box ease">Transition ease - padrão</div>
+    <div class="box linear">Transition linear</div>
+    <div class="box ease-in">Transition ease-in</div>
+    <div class="box ease-out">Transition ease-out</div>
+    <div class="box ease-in-out">Transition ease-in-out</div>
+    <div class="box cubic-bezier">Transition cubic-bezier()</div>
+</div>
+</body>
+</html>
