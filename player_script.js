@@ -1,13 +1,17 @@
 let music_library = [
-    {title: 'Have You Ever Seen The Rain?', artist: 'Creedence Clearwater Revival', 
-    src: 'Musics/Creedence Clearwater Revival - Have You Ever Seen The Rain.mp3', id: '0'},
+    {
+        title: 'Have You Ever Seen The Rain?', artist: 'Creedence Clearwater Revival',
+        src: 'Musics/Creedence Clearwater Revival - Have You Ever Seen The Rain.mp3', id: '0'
+    },
 
-    {title: 'Back In Black', artist: 'AC/DC', src: 'Musics/AC_DC - Back In Black.mp3', id: '1'},
+    { title: 'Back In Black', artist: 'AC/DC', src: 'Musics/AC_DC - Back In Black.mp3', id: '1' },
 
-    {title: 'I Cant Get No (Satisfaction)', artist: 'The Rolling Stones', 
-    src: 'Musics/The Rolling Stones - (I Cant Get No) Satisfaction.mp3', id: '2'},
+    {
+        title: 'I Cant Get No (Satisfaction)', artist: 'The Rolling Stones',
+        src: 'Musics/The Rolling Stones - (I Cant Get No) Satisfaction.mp3', id: '2'
+    },
 
-    {title: 'Sweet Child O Mine', artist: 'Guns N Roses', src: 'Musics/Guns N Roses - Sweet Child O Mine.mp3', id: '3'}
+    { title: 'Sweet Child O Mine', artist: 'Guns N Roses', src: 'Musics/Guns N Roses - Sweet Child O Mine.mp3', id: '3' }
 ];
 
 let musicIndex = 0;
@@ -19,7 +23,7 @@ newMusic(musicIndex);
 
 // eventos
 
-document.querySelector('.playMusic').addEventListener('click', getMusicToPlay);
+document.querySelectorAll('.playMusic').forEach(musica => { musica.addEventListener('click', a => { getMusicToPlay(a) }); })
 
 document.querySelector('.btn-play').addEventListener('click', playMusic);
 document.querySelector('.btn-pause').addEventListener('click', pauseMusic);
@@ -47,10 +51,9 @@ document.querySelector('.next').addEventListener('click', () => {
 
 // funções
 
-function getMusicToPlay() {
-
-
-    music.setAttribute('src', music_library[el].src);
+function getMusicToPlay(teste) {
+    console.log(teste.path[1].id)
+    music.setAttribute('src', music_library[teste.path[1].id].src);
     playMusic();
     /*
 var el = document.getElementById('fora');
@@ -99,8 +102,8 @@ function musicProgress() {
     musicTime.textContent = convertSecondsIntoMinutes(Math.floor(music.currentTime));
 }
 
-function convertSecondsIntoMinutes (seconds) {
-    let minutesArea = Math.floor(seconds/60);
+function convertSecondsIntoMinutes(seconds) {
+    let minutesArea = Math.floor(seconds / 60);
     let secondsArea = seconds % 60;
 
     if (secondsArea < 10) {
