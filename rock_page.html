@@ -25,32 +25,56 @@
         </div>
       </nav>
 
-      <!-- <div class="navbar-fixed down-alight">
-        <nav>
-          <div class="nav-wrapper">
-            <a href="#!" class="brand-logo">Logo</a>
-            <ul class="right hide-on-med-and-down">
-              <li><a href="">Sass</a></li>
-              <li><a href="">Components</a></li>
-            </ul>
-          </div>
-        </nav>
-      </div> -->
       <br><br>
 
-        <div class="row">
-          <div class="col s6 m3 container-card" >
+        <div class="row" style="display: flex; justify-content: space-around; align-items: center;">
+          <div class="container-card" >
             <div class="card">
-              <div class="card-image">
-                <img src="Images/rock.jpg" style="height: 250px;">
-                <span class="card-title">Card Title</span>
-                <a class="btn-floating halfway-fab waves-effect waves-light red" onclick="playMusic1()"><i class="material-icons">play_arrow</i></a>
+              <div class="card-image waves-effect waves-block waves-light">
+                <img src="Images/creedence.jpg" style="height: 250px;">
               </div>
+              <a id="1" class="btn-floating halfway-fab waves-effect waves-light red playMusic"><i class="material-icons">play_arrow</i></a>
+            </div>
+            <div class="card-content">
+              <p>Creedence - Have You Ever Seen The Rain?</p>
             </div>
             <audio src="Musics/Creedence Clearwater Revival - Have You Ever Seen The Rain.mp3" controls></audio>
           </div>
-        </div>
+                
+          <div class="container-card" >
+            <div class="card">
+              <div class="card-image">
+                <img src="Images/acdc.jpg" style="height: 250px;">
+                <span class="card-title"></span>
+                <a id="2" class="btn-floating halfway-fab waves-effect waves-light red playMusic"><i class="material-icons">play_arrow</i></a>
+              </div>
+            </div>
+            <audio src="Musics/AC_DC - Back In Black.mp3" controls></audio>
+          </div>
 
+          <div class="container-card" >
+            <div class="card">
+              <div class="card-image">
+                <img src="Images/rollingStones.png" style="height: 250px;">
+                <span class="card-title"></span>
+                <a id="3" class="btn-floating halfway-fab waves-effect waves-light red playMusic"><i class="material-icons">play_arrow</i></a>
+              </div>
+            </div>
+            <audio src="Musics/The Rolling Stones - (I Cant Get No) Satisfaction.mp3" controls></audio>
+          </div>
+
+          <div class="container-card" >
+            <div class="card">
+              <div class="card-image">
+                <img src="Images/gunsNroses.png" style="height: 250px;">
+                <span class="card-title"></span>
+                <a id="4" class="btn-floating halfway-fab waves-effect waves-light red playMusic"><i class="material-icons">play_arrow</i></a>
+              </div>
+            </div>
+            <audio src="Musics/Guns N Roses - Sweet Child O Mine.mp3" controls></audio>
+          </div>
+        </div>
+        
         <!-- PLAYER DA PÁGINAAA -->
         
           <div class="nav-wrapper playerOfMusic">
@@ -66,10 +90,10 @@
             </div>
   
             <div class="player">
-              <i class="material-icons btn-change">arrow_back</i>
-              <i class="material-icons btn-play">play_arrow</i>
+              <i class="material-icons btn-change back">arrow_back</i>
+              <i class="material-icons btn-play">play_circle_filled</i>
               <i class="material-icons btn-pause">pause</i>
-              <i class="material-icons btn-change">arrow_forward</i> 
+              <i class="material-icons btn-change next">arrow_forward</i> 
             </div>
 
           </div>
@@ -77,11 +101,4 @@
 
         <script src="player_script.js"></script>
 </body>
-<script>
-    function playMusic1() {
-        var audio1 = new Audio();
-        audio1.src = "Musics/Creedence Clearwater Revival - Have You Ever Seen The Rain.mp3";
-        audio1.play();
-    }
-</script>
 </html>

@@ -5,14 +5,21 @@ body {
     /*background-position: center center; */
 }
 
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 audio {
     display: none;
 }
 
 .container-card {
-    background-color:rgba(107, 95, 93, 0.3);
+    background-color:rgba(107, 95, 94, 0.3);
     border-radius: 5px;
+    height: 310px;
+    width: 325px;
 }
+
 .playerOfMusic {
     
     position: fixed; 
@@ -46,7 +53,6 @@ audio {
 progress{
     height: 6px;
     width: 0%;
-
 }
 
 .ponto {
