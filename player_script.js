@@ -23,7 +23,7 @@ newMusic(musicIndex);
 
 // eventos
 
-document.querySelectorAll('.playMusic').forEach(musica => { musica.addEventListener('click', a => { getMusicToPlay(a) }); })
+document.querySelectorAll('.playMusic').forEach(musica => { musica.addEventListener('click', e => { getMusicToPlay(e) }); })
 
 document.querySelector('.btn-play').addEventListener('click', playMusic);
 document.querySelector('.btn-pause').addEventListener('click', pauseMusic);
@@ -51,26 +51,9 @@ document.querySelector('.next').addEventListener('click', () => {
 
 // funções
 
-function getMusicToPlay(teste) {
-    console.log(teste.path[1].id)
-    music.setAttribute('src', music_library[teste.path[1].id].src);
+function getMusicToPlay(click_event) {
+    music.setAttribute('src', music_library[click_event.path[1].id].src);
     playMusic();
-    /*
-var el = document.getElementById('fora');
-el.addEventListener('click', function(e) {
-    alert(e.target.id);
-});
-
-    document.querySelectorAll("button").forEach(function(button) {
-    
-    button.addEventListener("click", function(event) {
-    const el = event.target || event.srcElement;
-    const id = el.id;
-    console.log(id);
-  });
-  
-});
-    */
 }
 
 function newMusic(index) {
