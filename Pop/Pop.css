@@ -1,0 +1,185 @@
+body {
+    background-image: url(./Images/Background\ Pop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 110vh;
+    object-fit: cover;
+
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    background-color: rgba(65, 50, 50, 0.550);
+
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    text-align: center;
+    margin-top: 6%;
+    height: 30%;
+}
+
+img {
+    height: 200px;
+    width: 140px;
+
+}
+
+.logo {
+    height: 240px;
+    width: 200px;
+    margin-top: -48%;
+}
+
+audio {
+    display: none;
+}
+
+.right {
+    margin-right: 30%;
+}
+
+.left {
+    margin-left: 30%;
+}
+
+.container-card {
+    background-color: rgba(107, 95, 94, 0.3);
+    border-radius: 6px;
+    height: 280px;
+    width: 300px;
+    ;
+
+}
+
+.playerOfMusic {
+
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 15.5%;
+    align-items: center;
+    margin-bottom: 0.2%;
+    margin-left: 0.2%;
+    margin-right: 0.2%;
+    border-radius: 5px;
+    background-color: 333;
+    /* background-color: rgba(38, 166, 153, 0.7) ; */
+}
+
+.duracao {
+    width: 300px;
+    margin-top: 25px;
+}
+
+.barra-progresso {
+    width: 300px;
+    height: 6px;
+    border: 1px solid rgb(201, 181, 181);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: calc(50vw - 150px);
+
+}
+
+progress {
+    height: 5.5px;
+    margin-left: -2%;
+    width: 0%;
+}
+
+.ponto {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(201, 181, 181);
+    border-radius: 50%;
+    margin-left: -7px;
+    margin-right: -3px;
+    justify-content: space-around;
+}
+
+.tempo-inicio {
+    margin-right: -1.4%;
+    /* display: flex;
+    width: 300px;
+    justify-content: space-between;
+    margin-left: calc(50vw - 150px);
+    margin-top: 5%; */
+
+}
+
+.inicio {
+    display: flex;
+    height: 1vh;
+    width: 4px;
+    margin-left: -1200%;
+    margin-top: 5%;
+
+}
+
+.final {
+    display: flex;
+    height: 1.4vh;
+    width: 4px;
+    margin-left: 8000%;
+    margin-top: 5%;
+}
+
+.player {
+    margin-left: calc(50vw - 150px);
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1.5%;
+}
+
+.btn-play, .btn-pause {
+    font-size: 50px;
+    cursor: pointer;
+    color: rgba(231, 212, 212, 0.796);
+}
+
+.btn-pause {
+    display: none;
+}
+
+.btn-change {
+    font-size: 40px;
+    cursor: pointer;
+    color: rgba(231, 212, 212, 0.796);
+}
+
+.btn-replay, .btn-volume, .btn-volume-off {
+    font-size: 30px;
+    cursor: pointer;
+    color: rgba(231, 212, 212, 0.796);
+}
+
+.btn-volume-off {
+    display: none;
+}
+
+.box {
+    border: 0px solid white;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.35);
+    transition: transform 0.6s ease-in-out;
+    transition: box-shadow 0.2s ease-in-out;
+    transition-duration: 0.6s;
+}
+
+.box:hover {
+    border: 0px solid black;
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+    transition-duration: 0s;
+}
