@@ -3,7 +3,6 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 125vh;
-    /*background-position: center center; */
 }
 
 .row {
@@ -64,7 +63,6 @@ audio {
     margin-right: 0.2%;
     border-radius: 5px;
     background-color: rgba(65, 50, 50, 0.355);
-    /* background-color: rgba(38, 166, 153, 0.7) ; */
 }
 
 .duracao {
@@ -101,12 +99,6 @@ progress{
 
 .tempo-inicio {
     margin-right: -1.4%;
-    /* display: flex;
-    width: 300px;
-    justify-content: space-between;
-    margin-left: calc(50vw - 150px);
-    margin-top: 5%; */
-
 } 
 
 .inicio {
