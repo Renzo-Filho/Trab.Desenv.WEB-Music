@@ -9,22 +9,21 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://kit.fontawesome.com/6ceddcce93.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="rock_style.css">
-    <title>rock</title> 
+    <title>ROCK N' ROLL</title> 
 </head>
 <body>
     <nav>
         <div class="nav-wrapper">
-          <a href="#" class="brand-logo center">*NOME DO SITE*</a>
-          <ul id="nav-mobile" class="">
+          <a href="#" class="brand-logo left"><img class="logo" src="Images/logo.png" alt="SÓ MUSIC"></a>
+          <ul class="nav-itens right">
             <li><a href="Main.html"><i class="material-icons">home</i></a></li>
-            <li><a href="#"><i class="material-icons">library_music</i></a></li>
           </ul>
         </div>
       </nav>
 
       <br><br>
 
-        <div class="row" style="display: flex; justify-content: space-around; align-items: center;">
+        <div class="row">
           <div class="container-card box" >
             <div class="card">
               <div class="card-image waves-effect waves-block waves-light">
@@ -78,57 +77,57 @@
           </div>
         </div> <!-- ROW FECHA AQUI -->       
 
-        <div class="row" style="display: flex; justify-content: space-around; align-items: center;">
+        <div class="row">
           <div class="container-card box">
             <div class="card">
               <div class="card-image waves-effect waves-block waves-light">
-                <img src="Images/creedence.jpg">
+                <img src="Images/beatles.jpg">
               </div>
                 <a id="4" class="btn-floating halfway-fab waves-effect waves-light red playMusic"><i class="material-icons">play_arrow</i></a>
             </div>
             <div class="card-content">
-              <p>Have You Ever Seen The Rain?</p>
+              <p>Twist And Shout</p>
             </div>
-            <audio src="Musics/Creedence Clearwater Revival - Have You Ever Seen The Rain.mp3" controls></audio>
+            <audio src="Musics/Twist And Shout (Remastered 2009).mp3" controls></audio>
           </div>
 
           <div class="container-card box">
             <div class="card">
               <div class="card-image waves-effect waves-block waves-light">
-                <img src="Images/creedence.jpg">
+                <img src="Images/queen.jpg">
               </div>
                 <a id="5" class="btn-floating halfway-fab waves-effect waves-light red playMusic"><i class="material-icons">play_arrow</i></a>
             </div>
             <div class="card-content">
-              <p>Have You Ever Seen The Rain?</p>
+              <p>Don't Stop Me Now</p>
             </div>
-            <audio src="Musics/Creedence Clearwater Revival - Have You Ever Seen The Rain.mp3" controls></audio>
+            <audio src="Musics/Queen - Dont Stop Me Now.mp3" controls></audio>
           </div>
 
           <div class="container-card box">
             <div class="card">
               <div class="card-image waves-effect waves-block waves-light">
-                <img src="Images/creedence.jpg">
+                <img src="Images/chuckBerry.png">
               </div>
                 <a id="6" class="btn-floating halfway-fab waves-effect waves-light red playMusic"><i class="material-icons">play_arrow</i></a>
             </div>
             <div class="card-content">
-              <p>Have You Ever Seen The Rain?</p>
+              <p>Johnny B. Goode</p>
             </div>
-            <audio src="Musics/Creedence Clearwater Revival - Have You Ever Seen The Rain.mp3" controls></audio>
+            <audio src="Musics/Chuck Berry - Johnny B. Goode.mp3" controls></audio>
           </div>
 
           <div class="container-card box">
             <div class="card">
               <div class="card-image waves-effect waves-block waves-light">
-                <img src="Images/creedence.jpg">
+                <img src="Images/nirvana.png">
               </div>
                 <a id="7" class="btn-floating halfway-fab waves-effect waves-light red playMusic"><i class="material-icons">play_arrow</i></a>
             </div>
             <div class="card-content">
-              <p>Have You Ever Seen The Rain?</p>
+              <p>Smells Like Teen Spirit</p>
             </div>
-            <audio src="Musics/Creedence Clearwater Revival - Have You Ever Seen The Rain.mp3" controls></audio>
+            <audio src="Musics/Nirvana - Smells Like Teen Spirit.mp3" controls></audio>
           </div>
 
         </div>  <!-- ROW FECHA AQUI -->
@@ -150,10 +149,13 @@
           </div>
 
           <div class="player">
+            <i class="material-icons btn-volume">volume_up</i>
+            <i class="material-icons btn-volume-off">volume_off</i>
             <i class="fa-solid fa-backward-step btn-change back"></i>
             <i class="material-icons btn-play">play_circle_filled</i>
             <i class="material-icons btn-pause">pause</i>
             <i class="fa-solid fa-forward-step btn-change next"></i>
+            <i class="material-icons btn-replay">replay</i>
           </div>
 
         <script src="player_script.js"></script>

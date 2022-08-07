@@ -11,7 +11,15 @@ let music_library = [
         src: 'Musics/The Rolling Stones - (I Cant Get No) Satisfaction.mp3', id: '2'
     },
 
-    { title: 'Sweet Child O Mine', artist: 'Guns N Roses', src: 'Musics/Guns N Roses - Sweet Child O Mine.mp3', id: '3' }
+    { title: 'Sweet Child O Mine', artist: 'Guns N Roses', src: 'Musics/Guns N Roses - Sweet Child O Mine.mp3', id: '3' },
+
+    { title: 'Twist And Shout', artist: 'The Beatles', src: 'Musics/Twist And Shout (Remastered 2009).mp3', id: '4' },
+
+    { title: 'Dont Stop Me Now', artist: 'The Queen', src: 'Musics/Queen - Dont Stop Me Now.mp3', id: '5' },
+
+    { title: 'Johnny B. Goode', artist: 'Chuck Berry', src: 'Musics/Chuck Berry - Johnny B. Goode.mp3', id: '6' },
+    
+    { title: 'Smells Like Teen Spirit', artist: 'Nirvana', src: 'Musics/Nirvana - Smells Like Teen Spirit.mp3', id: '7' }
 ];
 
 let musicIndex = 0;
@@ -27,6 +35,9 @@ document.querySelectorAll('.playMusic').forEach(musica => { musica.addEventListe
 
 document.querySelector('.btn-play').addEventListener('click', playMusic);
 document.querySelector('.btn-pause').addEventListener('click', pauseMusic);
+document.querySelector('.btn-volume').addEventListener('click', offVolume);
+document.querySelector('.btn-volume-off').addEventListener('click', onVolume);
+document.querySelector('.btn-replay').addEventListener('click', replayMusic);
 music.addEventListener('timeupdate', musicProgress);
 
 document.querySelector('.back').addEventListener('click', () => {
@@ -75,6 +86,23 @@ function pauseMusic() {
     document.querySelector('.btn-pause').style.display = 'none';
     document.querySelector('.btn-play').style.display = 'block';
 
+}
+
+function offVolume() {
+    music.volume = 0;
+    document.querySelector('.btn-volume').style.display = 'none';
+    document.querySelector('.btn-volume-off').style.display = 'block';
+}
+
+function onVolume() {
+    music.volume = 1;
+    document.querySelector('.btn-volume').style.display = 'block';
+    document.querySelector('.btn-volume-off').style.display = 'none';
+}
+
+function replayMusic() {
+    music.currentTime = 0;
+    music.play();
 }
 
 function musicProgress() {

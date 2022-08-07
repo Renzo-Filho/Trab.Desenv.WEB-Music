@@ -6,6 +6,12 @@ body {
     /*background-position: center center; */
 }
 
+.row {
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center;
+}
+
 nav {
     background-color: rgba(65, 50, 50, 0.550);
 }
@@ -21,8 +27,22 @@ img {
     height: 250px;
 }
 
+.logo {
+    height: 240px;
+    width: 200px;
+    margin-top: -48%;
+}
+
 audio {
     display: none;
+}
+
+.right {
+    margin-right: 30%;
+}
+
+.left {
+    margin-left: 30%;
 }
 
 .container-card {
@@ -129,6 +149,16 @@ progress{
     font-size: 40px;
     cursor: pointer;
     color: rgba(231, 212, 212, 0.796);
+}
+
+.btn-replay, .btn-volume, .btn-volume-off {
+    font-size: 30px;
+    cursor: pointer;
+    color: rgba(231, 212, 212, 0.796);
+}
+
+.btn-volume-off {
+    display: none;
 }
 
 .box{
