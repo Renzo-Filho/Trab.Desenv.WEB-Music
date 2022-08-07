@@ -4,22 +4,28 @@ let music_library = [
         src: 'Musics/facas.mp3', id: '0'
     },
 
-    { title: 'Molhando o Volante', artist: 'Jorge & Mateus', src: 'Musics/Jorge & Mateus - Molhando o Volante.mp3', id: '1' },
+    { title: 'Molhando o Volante', artist: 'Jorge & Mateus', 
+    src: 'Musics/Jorge & Mateus - Molhando o Volante.mp3', id: '1' },
 
     {
         title: 'Seu Perfil', artist: 'Henrique & Juliano',
         src: 'Musics/Henrique e Juliano -  SEU PERFIL - DVD Manifesto Musical.mp3', id: '2'
     },
 
-    { title: 'Termina Comigo Antes', artist: 'Gustavo Lima', src: 'Musics/Gusttavo Lima - Termina Comigo Antes  (Ao Vivo em Porto Alegre).mp3', id: '3' },
+    { title: 'Termina Comigo Antes', artist: 'Gustavo Lima', 
+    src: 'Musics/Gusttavo Lima - Termina Comigo Antes  (Ao Vivo em Porto Alegre).mp3', id: '3' },
 
-    { title: 'Foi Você Quem Trouxe', artist: 'Luana Prado', src: 'Musics/Lauana Prado - Foi Você Quem Trouxe (Ao Vivo).mp3', id: '4' },
+    { title: 'Foi Você Quem Trouxe', artist: 'Luana Prado', 
+    src: 'Musics/Lauana Prado - Foi Você Quem Trouxe (Ao Vivo).mp3', id: '4' },
 
-    { title: 'Expectativa vc Realidade', artist: 'Matheus & Kauan', src: 'Musics/Matheus & Kauan - Expectativa x Realidade.mp3', id: '5' },
+    { title: 'Expectativa vc Realidade', artist: 'Matheus & Kauan', 
+    src: 'Musics/Matheus & Kauan - Expectativa x Realidade.mp3', id: '5' },
 
-    { title: 'Bem pior que eu', artist: 'Marília Mendonça', src: 'Musics/Marília Mendonça - BEM PIOR QUE EU.mp3', id: '6' },
+    { title: 'Bem pior que eu', artist: 'Marília Mendonça', 
+    src: 'Musics/Marília Mendonça - BEM PIOR QUE EU.mp3', id: '6' },
     
-    { title: 'Clone', artist: 'Júlio & Cézar', src: 'Musics/Júnior e Cézar - CLONE - EP Provou, Gostou.mp3', id: '7' }
+    { title: 'Clone', artist: 'Júlio & Cézar', 
+    src: 'Musics/Júnior e Cézar - CLONE - EP Provou, Gostou.mp3', id: '7' }
 ];
 
 let musicIndex = 0;
