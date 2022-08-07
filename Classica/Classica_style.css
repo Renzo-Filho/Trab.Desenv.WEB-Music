@@ -10,10 +10,11 @@ body {
     display: flex; 
     justify-content: space-around; 
     align-items: center;
+    margin-left: 80px;
 }
 
 nav {
-    background-color: rgba(65, 50, 50, 0.550);
+    background-color:#E663D0;
 }
 
 p {

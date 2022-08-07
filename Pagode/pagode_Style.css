@@ -1,5 +1,5 @@
 body {
-    background-image: url(Imagens/BackPago.jpg);
+    background-image: url(Imagens/Backpago.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 125vh;
@@ -10,10 +10,12 @@ body {
     display: flex; 
     justify-content: space-around; 
     align-items: center;
+    margin-left: 90px;
+    
 }
 
 nav {
-    background-color: rgba(65, 50, 50, 0.550);
+    background-color: #E0B387;
 }
 
 p {
