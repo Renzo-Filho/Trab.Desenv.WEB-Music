@@ -48,6 +48,7 @@ document.querySelector('.back').addEventListener('click', () => {
     newMusic(musicIndex);
     document.querySelector('.btn-pause').style.display = 'none';
     document.querySelector('.btn-play').style.display = 'block';
+    playMusic();
 });
 
 document.querySelector('.next').addEventListener('click', () => {
@@ -58,6 +59,7 @@ document.querySelector('.next').addEventListener('click', () => {
     newMusic(musicIndex);
     document.querySelector('.btn-pause').style.display = 'none';
     document.querySelector('.btn-play').style.display = 'block';
+    playMusic();
 });
 
 // funções
