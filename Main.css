@@ -39,6 +39,17 @@ img {
   margin-top: -48%;
 }
 
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  text-align: center;
+  margin-top: 6%;
+}
+
+.card-content {
+  text-align: center;
+}
+
 .container-card {
   background-color:rgba(107, 95, 94, 0.3);
   border-radius: 5px;
@@ -58,7 +69,8 @@ img {
 }
 
   .slides {
-    background-color: #fff;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgba(0, 0, 0, 0);
 }
 
   .page-footer {
