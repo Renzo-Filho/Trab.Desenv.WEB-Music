@@ -104,6 +104,8 @@ function onVolume() {
 
 function replayMusic() {
     music.currentTime = 0;
+    document.querySelector('.btn-pause').style.display = 'block';
+    document.querySelector('.btn-play').style.display = 'none';
     music.play();
 }
 
